@@ -1,2 +1,338 @@
 // Import page-specific CSS files here.
 @import "home";
+/* @import "test"; */
+
+.texthex {
+  margin-bottom: 3em;
+}
+
+/* .move-up:hover{
+  background-color: crimson;
+  transition: all .5s;
+  transform : translateY(-10px);
+} */
+
+.scdtext {
+  text-align: left !important;
+}
+
+.carousel-item {
+  transition: transform 250ms;
+}
+
+.carousel-item:hover {
+  transition: transform 250ms;
+}
+
+.textwidth {
+  max-width: 50%;
+}
+
+.fade-in-right {
+  animation: fadeRight .4s linear .4s;
+}
+
+.fade-in-left {
+  animation: fadeLeft .4s linear .4s backwards;
+}
+
+.imgimpact {
+  animation: fadeLeft .4s linear .4s backwards;
+}
+
+.textgon {
+
+}
+
+.imgimpactsmall {
+  visibility: hidden;
+  width: 0%;
+}
+
+.maintext {
+  font-weight: 900;
+  font-size: 56px;
+  color: black;
+
+}
+
+#quatorze {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.maintext2 {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.smallconnaitre {
+  display: none;
+}
+
+/* .imgimpact {
+  position: absolute;
+  top: -23em;
+  left: -3em;
+  z-index: 10;
+} */
+
+.medfont {
+  font-size: 16px;
+}
+
+.bigfont {
+  font-size: 19px;
+  color: white;
+  font-weight: 900;
+}
+
+.img_preview {
+  position: absolute;
+  top: -11em;
+  left: 18em;
+  z-index: 0;
+}
+
+.imgconnaitre {
+  position: absolute;
+  top: -20em;
+  left: -14em;
+  z-index: 10;
+}
+
+
+
+
+/*
+@media(max-width:768px){
+  .
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:576px){
+  .lead {
+
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .contcimg {
+    width: 400px;
+  }
+
+  .text-muted {
+    font-size: 14px;
+  }
+
+  .textwidth {
+    max-width: 80%;
+  }
+
+  .texthex {
+    margin-bottom: 1.5em;
+  }
+
+  .imgimpact {
+    display: none;
+  }
+
+  .spacy {
+    align-items: space-around;
+    justify-content: space-around;
+  }
+
+  .imgconnaitre {
+    display: none;
+  }
+
+  .img_preview {
+    max-width: 400px;
+    top: -1em;
+    left: 19em;
+    transform: rotate(180deg);
+    z-index: 10;
+  }
+
+  .img-mission {
+
+  }
+
+  .imgimpactsmall {
+    position: absolute;
+    width: 476px;
+    top: -12em;
+    left: 6em;
+    z-index: 00;
+    visibility: visible;
+  }
+
+  .slice {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+
+  .maintext {
+    text-align: left;
+    color: black;
+    font-weight: 900;
+    font-size: 38px;
+    margin-bottom: 0em !important;
+  }
+
+  .maintext2 {
+    text-align: center;
+  }
+
+  .textgon {
+    font-size: 16px;
+  }
+
+
+  #myBtn a {
+
+    font-size: 11px;
+  }
+
+  .smallconnaitre {
+    display: block;
+    position: absolute;
+    max-width: 599px;
+    top: -20em;
+    left: -4em;
+    z-index: 00;
+  }
+
+  .home {
+    padding-top: 2rem;
+  }
+
+
+  .btn-lg {
+    background-color: #F6511D;
+    line-height: 0.5em;
+  }
+
+  .navbar-brand {
+    font-size: 10px;
+  }
+
+  .scdtext {
+    font-size: 11px;
+    padding-bottom: 2.5em;
+  }
+
+  .smlmargin {
+    margin-top: 1rem !important;
+  }
+
+  .py-5 {
+    padding-bottom: 1rem !important;
+  }
+
+  .bigcont {
+    height: 45vh;
+  }
+
+  .mb-8 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mt-8 {
+    margin-top: 1rem !important;
+
+  }
+
+  .no-marg-top {
+    padding-top: 0.5em !important;
+  }
+
+  .no-bot {
+    padding-bottom: 0.5em !important;
+  }
+
+  .no-marg-bot {
+    height: 110px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .img_scd {
+    display: none;
+  }
+
+  .lastcont {
+    display: none;
+  }
+
+  .smally {
+    height: 0px;
+  }
+
+  .midle {
+    text-align: center;
+  }
+
+  .smallimg {
+    max-width: 30%;
+  }
+
+  .smallpic {
+    width: 305px;
+  }
+
+  .smallfont {
+    font-size: 14px;
+  }
+
+  .medfont {
+    font-size: 16px;
+  }
+
+  .card2 {
+
+    align-items: center !important;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .blockquote h4 {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+
+
+ /*  .tricount {
+    text-align: center !important;
+  }
+
+  .mdltext {
+    text-align: center !important;
+  } */
+}
+
