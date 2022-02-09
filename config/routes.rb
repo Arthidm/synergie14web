@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :articles, except: :index
+
+
   root to: 'pages#home'
 
   get "home/download"
