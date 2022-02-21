@@ -1,37 +1,37 @@
-<body>
+<body style="background-color: #FEF5ED;">
     <!-- Preloader -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar1 navbar1-expand-lg navbar1-light bg-white" style="z-index: 2;">
         <div class="container">
             <!-- Brand -->
             <a href="/">
-              <%= image_tag("logopetitrouge.jpg", :alt => "rss feed", :class => "navbar-brand", :style => "width:75px") %>
+              <%= image_tag("logopetitrouge.jpg", :alt => "rss feed", :class => "navbar1-brand", :style => "width:75px") %>
             </a>
 
             <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar1-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar1-toggler-icon"></span>
             </button>
             <!-- Collapse -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/">Accueil</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="padding-left: 23em;">
+                <ul class="navbar1-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav1-item ">
+                        <a class="nav1-link" href="/" style="font-size: 1.3em; font-family: 'Nunito Sans', sans-serif; color: black; font-weight: 600;">Accueil</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/connaitre">Nous Connaître</a>
+                    <li class="nav1-item ">
+                        <a class="nav1-link" href="/connaitre" style="font-size: 1.3em; font-family: 'Nunito Sans', sans-serif; color: black; font-weight: 600;">Nous Connaître</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/impact">Notre Impact</a>
+                    <li class="nav1-item ">
+                        <a class="nav1-link" href="/impact" style="font-size: 1.3em; font-family: 'Nunito Sans', sans-serif; color: black; font-weight: 600;">Notre Impact</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/soutenir">Nous Soutenir</a>
+                    <li class="nav1-item ">
+                        <a class="nav1-link" href="/soutenir" style="font-size: 1.3em; font-family: 'Nunito Sans', sans-serif; color: black; font-weight: 600;">Nous Soutenir</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/contact">Nous Contacter</a>
+                    <li class="nav1-item ">
+                        <a class="nav1-link" href="/contact" style="font-size: 1.3em; font-family: 'Nunito Sans', sans-serif; color: black; font-weight: 600;">Nous Contacter</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav1-item dropdown">
                         <%= image_tag("idea.png", :alt => "rss feed", :class => "ml-4 mt-2", :style => "width: 30px") %>
 
                         <div class="dropdown-content">
@@ -55,37 +55,42 @@
             </div>
         </div>
     </nav>
-    <section class="home container" style="">
-
-        <div class="slides-container">
-
-            <div class="slide active">
-                <div class="content">
-                    <!-- Heading -->
-                  <h1 class="maintext mb-4" style="">
-                    Synergie <span id="quatorze" style="color: #F65337;">14</span>
+    <!-- Main content -->
+    <section class="slice topy bg bigcont">
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-6 text-center text-lg-left">
+                  <!-- Heading -->
+                  <h1 class="maintext mb-4" style="color: black; font-weight: 900;">
+                    Synergie 14
                   </h1>
                   <!-- Text -->
-                  <p class="lead text-black opacity-8 textwidth" style="">
+                  <p class="lead text-dark opacity-8">
                     Centre d’accueil,  d’hébergement et d’accompagnement de Mineurs Etrangers Non Accompagnés (MENA)
                   </p>
                   <!-- Buttons -->
-                  <div class="mt-5 smlmargin">
+                  <div class="mt-5">
                       <a href="/contact" class="btn btn-warning btn-lg btn-icon">
                           <span class="btn-inner--icon">
                               <i data-feather="edit-3"></i>
                           </span>
-                          <span class="btn-inner--text" href="/contact">Contactez Nous</span>
+                          <span class="btn-inner--text">Contactez Nous</span>
                       </a>
                   </div>
                 </div>
-                <div class="image">
-
-                  <%= image_tag("back3.png", :alt => "rss feed", :class => "img_preview") %>
-
+                <div class="col-lg-6">
+                  <div class="imghome" style="">
+                    <%= image_tag("back3.png", :alt => "rss feed", :class => "img_preview") %>
+                  </div>
                 </div>
             </div>
         </div>
+        <!-- SVG separator -->
+       <!--  <div class="shape-container shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div> -->
     </section>
 
    <!--  <section class="container-md  ">
@@ -244,417 +249,7 @@
       </div>
     </section>
 
-    <!-- Gallery -->
-    <!--
-    Gallery is linked to lightbox using data attributes.
-
-    To open lightbox, this is added to the gallery element: {data-toggle="modal" data-target="#exampleModal"}.
-
-    To open carousel on correct image, this is added to each image element: {data-target="#carouselExample" data-slide-to="0"}.
-    Replace '0' with corresponding slide number.
-    -->
-
-    <div class="slice slice-lg mt-8">
-      <div class="container">
-        <h1 class="text-center texthex" style="color: black;">Galerie Photo</h1>
-
-        <div class="row" id="gallery2">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="image2" data-toggle="modal" data-target="#exampleModal">
-              <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
-
-              <h2 class="over">Sport:</h2>
-            </div>
-            <div class="image2" data-toggle="modal" data-target="#largeModal">
-              <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
-
-              <h2 class="over">Loisir:</h2>
-            </div>
-          </div>
-           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="image2" data-toggle="modal" data-target="#cultureModal">
-              <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%; height: 400px", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#culture"}, "data-slide-to" => "0"  ) %>
-              <h2 class="over">Culture:</h2>
-            </div>
-            <div class="image2" data-toggle="modal" data-target="#decouveModal">
-              <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#decouve"}, "data-slide-to" => "0"  ) %>
-
-              <h2 class="over">Découverte:</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="image2" data-toggle="modal" data-target="#genModal">
-              <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#gen"}, "data-slide-to" => "0"  ) %>
-              <h2 class="over">Général:</h2>
-            </div>
-           <!--  <div class="image2">
-              <h2 class="over">Sorties Culturelles:</h2>
-            </div> -->
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Modal -->
-    <!--
-    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-    -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="carouselExample" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExample" data-slide-to="1"></li>
-                <li data-target="#carouselExample" data-slide-to="2"></li>
-                <li data-target="#carouselExample" data-slide-to="3"></li>
-                <li data-target="#carouselExample" data-slide-to="4"></li>
-                <li data-target="#carouselExample" data-slide-to="5"></li>
-                <li data-target="#carouselExample" data-slide-to="6"></li>
-                <li data-target="#carouselExample" data-slide-to="7"></li>
-                <li data-target="#carouselExample" data-slide-to="8"></li>
-                <li data-target="#carouselExample" data-slide-to="9"></li>
-                <li data-target="#carouselExample" data-slide-to="10"></li>
-                <li data-target="#carouselExample" data-slide-to="11"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("s9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <!--
-    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-    -->
-    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="testExample" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#testExample" data-slide-to="0" class="active"></li>
-                <li data-target="#testExample" data-slide-to="1"></li>
-                <li data-target="#testExample" data-slide-to="2"></li>
-                <li data-target="#testExample" data-slide-to="3"></li>
-                <li data-target="#testExample" data-slide-to="4"></li>
-                <li data-target="#testExample" data-slide-to="5"></li>
-                <li data-target="#testExample" data-slide-to="6"></li>
-                <li data-target="#testExample" data-slide-to="7"></li>
-                <li data-target="#testExample" data-slide-to="8"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("l9.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#testExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#testExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <!--
-    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-    -->
-    <div class="modal fade" id="cultureModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="culture" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#culture" data-slide-to="0" class="active"></li>
-                <li data-target="#culture" data-slide-to="1"></li>
-                <li data-target="#culture" data-slide-to="2"></li>
-                <li data-target="#culture" data-slide-to="3"></li>
-                <li data-target="#culture" data-slide-to="4"></li>
-                <li data-target="#culture" data-slide-to="5"></li>
-                <li data-target="#culture" data-slide-to="6"></li>
-                <li data-target="#culture" data-slide-to="7"></li>
-                <li data-target="#culture" data-slide-to="8"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("c1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#culture" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#culture" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <!--
-    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-    -->
-    <div class="modal fade" id="decouveModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="decouve" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#decouve" data-slide-to="0" class="active"></li>
-                <li data-target="#decouve" data-slide-to="1"></li>
-                <li data-target="#decouve" data-slide-to="2"></li>
-                <li data-target="#decouve" data-slide-to="3"></li>
-                <li data-target="#decouve" data-slide-to="4"></li>
-                <li data-target="#decouve" data-slide-to="5"></li>
-                <li data-target="#decouve" data-slide-to="6"></li>
-                <li data-target="#decouve" data-slide-to="7"></li>
-                <li data-target="#decouve" data-slide-to="8"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("soutient.png", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("d1.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#decouve" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#decouve" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <!--
-    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-    -->
-    <div class="modal fade" id="genModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="gen" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#gen" data-slide-to="0" class="active"></li>
-                <li data-target="#gen" data-slide-to="1"></li>
-                <li data-target="#gen" data-slide-to="2"></li>
-                <li data-target="#gen" data-slide-to="3"></li>
-                <li data-target="#gen" data-slide-to="4"></li>
-                <li data-target="#gen" data-slide-to="5"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-                <div class="carousel-item">
-                  <%= image_tag("g6.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#gen" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#gen" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
+    <%= render 'shared/gallery' %>
 
     <footer class="footer-07">
       <div class="container">
