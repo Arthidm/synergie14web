@@ -1,3 +1,4 @@
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
@@ -50,7 +51,7 @@
               <span class="btn-inner--icon">
                 <i data-feather="edit-3"></i>
               </span>
-              <span class="btn-inner--text">Contactez Nous</span>
+              <span class="btn-inner--text">Contactez-Nous</span>
             </a>
           </div>
         </div>
@@ -327,7 +328,7 @@
   </section>
 
 
-<section class="">
+<!-- <section class="">
   <div class="container text-center my-3">
     <h2 class=" mt-6 mb-6">Nos Rapports d'Activités</h2>
     <div class="row mx-auto my-auto pb-8">
@@ -418,9 +419,111 @@
     </div>
   </div>
 
+
+</div>
+
+</section> -->
+
+<section>
+  <div class="container" style="padding-bottom: 4em;">
+    <h2 class=" mt-6 mb-6">Nos Rapports d'Activités</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active" style="display: flex;">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2020</h5>
+                <p><%= link_to "Télécharger", download2020_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed", :style => "height: 20%") %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2019</h5>
+                <p><%= link_to "Télécharger", download2019_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed", :style => "height: 20%") %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2018</h5>
+                <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed", :style => "height: 20%") %></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="display: flex;">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2017</h5>
+                <p><%= link_to "Télécharger", download2019_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2016</h5>
+                <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body pb-5">
+                <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
+                  <%= image_tag("folder.png", :alt => "rss feed", :style => "height: 80px" ) %>
+                </div>
+                <h5 class="h4 lh-130 mb-4">Rapport-2015</h5>
+                <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background-image: none;">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background-image: none;">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 </section>
-
-
 
 
 </body>
@@ -449,6 +552,8 @@
 </footer>
 
 
+
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
   $('#recipeCarousel').carousel({
     interval: 100000000000
@@ -485,4 +590,4 @@
       onscroll(document, toggleBacktotop)
     }
 
-</script>
+</script> -->
