@@ -165,7 +165,7 @@ $bootstrap-xl: 1200px;
   .carousel-control-prev, .carousel-control-next {
     font-size: 2em;
     top: auto;
-    opacity: 1;
+    // opacity: 1;
     bottom: -52px;
 
     @media (min-width: $bootstrap-md) {
